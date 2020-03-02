@@ -5,19 +5,50 @@
 body{
     margin: 0;
     padding: 0;
-}
-.wrapper{
-   width: 100vw;
-   height: 30vh;
-   border: 1px solid navy;
-   margin-bottom: 20px;
-}
+} 
 
 .square{
     width: 100px;
     height: 100px;
-    background: rgba(0,0,255,1);
 }
+
+
+.red{
+    background: red;
+}
+
+.peru{
+    background: peru;
+}
+
+.blue{
+    background: blue;
+}
+
+.d-inline-block{
+    display: inline-block;
+    
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-around{
+    justify-content: space-around;
+}
+
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+.wrapper{
+   width: 100vw;
+   height: 15vh;
+   border: 1px solid navy;
+   margin-bottom: 20px;
+   display: flex;
+}
+
 
 .relative-centered{
     margin-left: calc(50vw - 50px);
