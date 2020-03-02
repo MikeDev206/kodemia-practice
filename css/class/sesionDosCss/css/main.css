@@ -1,61 +1,92 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
-} 
-
-.square{
-    width: 100px;
-    height: 100px;
 }
 
+.square {
+    width: 100px;
+    height: 100px;
+    transition: all 1s ease;
+}
 
-.red{
+.red {
     background: red;
 }
 
-.peru{
+.peru {
     background: peru;
 }
 
-.blue{
+.blue {
     background: blue;
 }
 
-.d-inline-block{
+.d-inline-block {
     display: inline-block;
-    
 }
 
-.justify-content-center{
+.justify-content-center {
     justify-content: center;
 }
 
-.justify-content-around{
+.justify-content-around {
     justify-content: space-around;
 }
 
-.justify-content-evenly{
+.justify-content-evenly {
     justify-content: space-evenly;
 }
-.wrapper{
-   width: 100vw;
-   height: 15vh;
-   border: 1px solid navy;
-   margin-bottom: 20px;
-   display: flex;
+
+.wrapper {
+    width: 100vw;
+    height: 15vh;
+    border: 1px solid navy;
+    margin-bottom: 20px;
+    display: flex;
 }
 
-
-.relative-centered{
+.relative-centered {
     margin-left: calc(50vw - 50px);
-
 }
 
-.margin-centered{
+.margin-centered {
     margin-left: auto;
     margin-right: auto;
+}
+
+.transition .square.peru:hover {
+    background: slategray;
+}
+
+.transition .square.peru:hover~.square.blue {
+    background: pink;
+}
+
+.wrapper.shape .square:hover {
+    border-radius: 100%;
+    opacity: 0;
+}
+
+.wrapper.check .square.blue {
+    height: 0;
+}
+
+.wrapper.check input:checked~.square.blue {
+    height: 100px;
+}
+
+.wrapper.check input:checked~.square.peru {
+    height: 0;
+}
+
+.wrapper.check .square.peru:hover {
+    height: 0;
+}
+
+.wrapper.check .square.peru:hover+.square.blue {
+    height: 100px;
 }
