@@ -1,0 +1,101 @@
+/*Mobile-version*/
+
+
+/* .responsive-shape {
+    width: 200px;
+    height: 200px;
+    background: slategrey;
+    background: ;
+    border: 1px solid black;
+    margin: 20px auto;
+} */
+
+
+/*@mediaquery
+Es una regla de reglas, o una condición formada por la palabra reservada @media que sirve para declarar el mediaquery
+el segundo parámetro es la palabra only screen que no es obligatoria pues sirve para identificar en que tipos de pantalla
+pueden aplicar mi mediaquery y con el "and" aquí se empieza la condición de dimensiones.
+Lo que nos determina si estoy en un dispositivo o en otro es el ancho pues el alto varia demasiado y el ancho no es
+tan variable.
+Todo lo que aplique por fuera de los mediaqueries son mis default y lo que esté dentro del media
+es lo que voy a cambiar 
+El breakpoint es el punto donde algo se transforma en otra cosa*/
+
+
+/*Tablet-version*/
+
+
+/* @media only screen and (min-width: 520px) {
+    .responsive-shape {
+        width: 100px;
+        background: rgb(14, 41, 69);
+        transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    }
+} */
+
+
+/*Desktop-version*/
+
+
+/* @media only screen and (min-width: 1024px) {
+    .responsive-shape {
+        width: 200px;
+        background: peru;
+        border-radius: 100%;
+    }
+} */
+
+
+/*MobileV*/
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.slateblue {
+    background: slateblue;
+}
+
+.black {
+    background: #000000;
+}
+
+.green {
+    background: #008000;
+}
+
+@media only screen and (max-width: 600px) {
+    .square {
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+}
+
+
+/*TabletV*/
+
+@media only screen and (max-width: 800px) {
+    .square.slateblue {
+        display: none;
+    }
+    .square.green {
+        display: none;
+    }
+}
+
+
+/*DesktopV*/
+
+@media only screen and (max-width: 1125px) {
+    .square.black {
+        display: none;
+    }
+}
