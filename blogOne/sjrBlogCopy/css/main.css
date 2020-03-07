@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Feijoa', Georgia, serif;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid #BA5902;
+}
+
+.nav-bar li {
+    list-style: none;
+    display: flex;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li a {
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: #BA5902;
+    padding: 2px;
+}
+
+.susan-section,
+.experience {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid #BA5902;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer {
+    border-top: 3px solid #BA5902;
+    background: #262626;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
