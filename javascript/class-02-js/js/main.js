@@ -40,3 +40,25 @@ var radius = 4;
 var circleArea = PI * (radius ** 2);
 
 console.log(circleArea);
+
+//Conditionals
+
+var color = "red";
+
+if (color === "blue") {
+    console.log('The color is blue');
+} else {
+    console.log("The color isn't blue bitch!");
+}
+
+//2nd conditional
+
+var pet = "dog";
+
+if (pet === "dog" || pet === "parrot") {
+    console.log("It's a dog");
+} else if (pet === "parrot") {
+    console.log("It's a parrot");
+} else {
+    console.log("It's not a dog or a parrot prro! >:v");
+}
