@@ -5,12 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Susan's blog with bootstrap</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 
 <body>
 
+    <!-- Nav section -->
+
+    <div class="navbar navbar-expand-lg navbar-light bg-light border-bottom margin-bottom-5">
+
+        <h1 class="logo-container col-6 col-md-8 col-lg-8">
+            <a class="navbar-brand" href="/">
+                <svg class="logo text-danger" xmlns="https://www.w3.org/2000/svg">
+                <title>SJR</title>
+                <path d="M65.54 39.07a23 23 0 0 0 11 6.88 82 82 0 0 0 17.16 3.36 73.5 73.5 0 0 0 8.74-.1 36.91 36.91 0 0 0 5.07-.5 37.26 37.26 0 0 0 3.75-1.14q2.47-.72 5-1.36a7.84 7.84 0 0 1 1.34-.11 6 6 0 0 1 1.1-.62c6.47-2.15 12.84-4.52 18.68-8.1 4-2.45 8-5 11.94-7.51.53-.34.95-.86 1.49-1.17a2.85 2.85 0 0 1 1.11-.12c0 .33.06.65.06 1a41.44 41.44 0 0 0 0 4.77c.08.75 0 1.27-.54 1.64-2.86 1.85-5.72 3.7-8.63 5.47s-5.67 3.42-8.56 5a35 35 0 0 1-5.05 2.39c-5.26 1.91-10.5 3.9-15.86 5.48-5.88 1.73-11.91 3-18.1 2.55-3-.2-6-.74-9-1.2a43.36 43.36 0 0 1-5.58-1.1c-3.62-1.06-7.4-1.81-10.56-4-2.09-1.46-4-3.16-6-4.77-.85-.69-1.68-1.42-2.65-2.24-.92 1.41-1.81 2.68-2.61 4-1.08 1.8-2 3.73-3.18 5.45-2 2.78-4.12 5.41-6.14 8.14-.83 1.12-1.46 2.38-2.29 3.49-.33.43-1 .61-1.49.91a16.92 16.92 0 0 1-.82-2c-.17-.59-.14-1.24-.25-1.85-.38-2.08.83-3.59 1.82-5.19s2.11-3.51 3.1-5.3 1.89-3.58 2.79-5.39a10 10 0 0 1 1.14-2.48c1.62-1.7 1.58-4.32 3.44-5.85.25-.2.23-.72.44-1.44-1.19 1.38-2.16 2.48-3.09 3.62s-1.63 2.24-2.47 3.32a99.65 99.65 0 0 1-18.2 17.54A21.26 21.26 0 0 0 26.86 69a20 20 0 0 1-1.39 2.07c-.51.84-.91 1.76-1.44 2.58-2.5 3.85-5 7.7-7.57 11.49-.86 1.27-2 2.35-2.88 3.59-.77 1.07-1.33 2.3-2.1 3.37-1.2 1.66-2.49 3.26-3.77 4.86a10.06 10.06 0 0 1-1.35 1.44c-.4.34-1 .84-1.35.73a2 2 0 0 1-1.09-1.3A26.57 26.57 0 0 1 3 92a12.64 12.64 0 0 1 1.33-4.24 39.31 39.31 0 0 1 2.36-5.09c.88-1.5 2.08-2.81 3.1-4.23.64-.89 1.15-1.88 1.84-2.72 1.73-2.11 3.52-4.17 5.31-6.23 1.4-1.61 2.82-3.19 4.25-4.77 1.69-1.87 3.36-3.75 5.09-5.57a25.74 25.74 0 0 0 4.5-6.81c1.18-2.48 2.64-4.83 3.9-7.27 1.15-2.22 2.18-4.51 3.32-6.73.9-1.75 1.9-3.45 2.83-5.18.48-.9.89-1.84 1.36-2.75.69-1.32 1.43-2.62 2.13-3.93a8.09 8.09 0 0 0 .34-1 6.83 6.83 0 0 0-.86.58 63.65 63.65 0 0 1-11.6 9.44c-2.42 1.52-4.86 3-7.32 4.49-.76.45-.7 1-.63 1.74a59.19 59.19 0 0 1 .55 6.66 8.22 8.22 0 0 1-4.38 7.16A15.56 15.56 0 0 1 14.65 58a18.67 18.67 0 0 1-4.43.08 16.23 16.23 0 0 1-4.59-.91 9.4 9.4 0 0 1-3.68-2.52A8.56 8.56 0 0 1 .1 47.84a8.27 8.27 0 0 1 4-5.89 37.85 37.85 0 0 1 9.2-4 26.65 26.65 0 0 0 3.61-1.77c-1.82-1.71-3.45-3.31-5.16-4.81s-3.43-2.73-5.05-4.19A12.26 12.26 0 0 1 2.9 14a8.57 8.57 0 0 1 3.27-4.31 23 23 0 0 1 12.47-4.4 50.5 50.5 0 0 1 7.78.43 4.34 4.34 0 0 1 3.51 4.35c0 1.19.1 2.38.13 3.57a12.54 12.54 0 0 1-.12 1.36c-.34-.23-.59-.3-.63-.44-.64-2.16-2.59-2.56-4.31-2.85A22.81 22.81 0 0 0 11 14c-1.21.6-2.43 1.18-3.58 1.87a6.12 6.12 0 0 0-1.56 1.43c-.73.91-.18 1.69.49 2.3a44.38 44.38 0 0 0 4.62 4 34.52 34.52 0 0 1 9.37 10c.64 1 1.21.76 2 .45a14.25 14.25 0 0 0 1.79-.81c2.56-1.52 5.14-3 7.65-4.64 1.09-.7 2-1.67 3-2.47.55-.42 1.22-.68 1.75-1.12 1.5-1.24 3-2.55 4.42-3.82.23-.2.48-.38.72-.57a7 7 0 0 0 1.3-1c1.56-1.93 3.07-3.9 4.58-5.87 1.1-1.43 2.23-2.84 3.21-4.35A18.27 18.27 0 0 0 52 6.58a11.84 11.84 0 0 1 .79-1.26c.18.64.27.89.32 1.14 1.42 6.51-.88 12.31-3.47 18-1.64 3.62-3.29 7.24-5 10.82-1.3 2.68-2.77 5.29-4.13 7.95-.82 1.61-1.59 3.25-2.38 4.88l.34.27c1-.82 2-1.58 2.88-2.49 2.44-2.49 4.93-4.94 7.2-7.58 2.48-2.89 4.6-6.09 7.12-8.94 1.8-2 3.1-4.41 4.8-6.5 1.28-1.65 2.83-3.17 4.13-4.87 1.66-2.21 3.14-4.55 4.7-6.83q1.57-2.31 3.13-4.62c.13-.19.2-.43.31-.63.36-.63.77-1.23 1.1-1.87.49-.92.93-1.86 1.39-2.8A5.31 5.31 0 0 1 76 0a21.65 21.65 0 0 1 1.35 8.41 7.45 7.45 0 0 1 1-.82c2.41-1.4 4.41-3.43 7.13-4.37 1.69-.58 3.2-1.69 4.89-2.3A10 10 0 0 1 96 .56c2.43.53 3.19 2.28 3.55 4.27a33.05 33.05 0 0 1 .41 5.71c0 3.1-1.66 5.51-3.32 8a29.8 29.8 0 0 1-8 7.75c-2.84 2-5.84 3.68-8.85 5.36s-6.4 3.37-9.62 5c-1.31.67-2.65 1.27-4 1.92a4.15 4.15 0 0 0-.63.5zm2.89-8.88l.22.24c1-.45 2-.85 3-1.35 2.72-1.39 5.41-2.83 8.12-4.24A51.29 51.29 0 0 0 91 17.53c2.26-2.07 4.56-4.17 5.89-7.08.71-1.56.08-3.21-1.62-3.24a13.22 13.22 0 0 0-4.66.68c-2.17.8-4.15 2.11-6.31 3-3.09 1.23-4.92 4-7.55 5.81-1 .66-1.48 1.91-2.31 2.8-2.06 2.19-3.2 4.92-4.53 7.54-.57.96-1 2.08-1.48 3.14zM4 50.07c4.32 3.51 12.37 2.29 16.17-1.4 2.49-2.42 2.45-4.25.46-6.63-4.19 1.68-8.38 3.31-12.52 5A8.28 8.28 0 0 0 4 50.07z">
+                </path>
+                </svg>
+            </a>
+
+        </h1>
+        <button class="navbar-toggler   " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-12 col-md-6 col-lg-4" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" style="font-size: 30px;">
+                <li class="nav-item"><a class="p-1 text-decoration-none text-danger" href="https://www.susanjeanrobertson.com/work/ ">Work</a></li>
+                <li class="nav-item"><a class="p-1 text-decoration-none text-danger" href="https://www.susanjeanrobertson.com/about/">About</a></li>
+                <li class="nav-item"><a class="p-1 text-decoration-none text-danger" href="https://www.susanjeanrobertson.com/blog/ ">Blog</a></li>
+                <li class="nav-item"><a class="p-1 text-decoration-none text-danger" href="https://www.susanjeanrobertson.com/contact/">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Nav section -->
+
+    <!-- Susan section -->
+    <div class="container border-bottom py-5">
+        <div class="row">
+            <div class="text col-12 col-md-6 col-lg-7">
+                <h1>Hi. I'm Susan Robertson, a design implementer.</h1>
+                <p class="">I spend my days thinking about HTML, CSS, accesibility and design systems.</p>
+            </div>
+            <div class="image col-12 col-md-6 col-lg-5">
+                <img src="./imges/blogSusanImg1.jpg" class="img-fluid rounded" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Susan section -->
+
+    <!-- Experience section -->
+
+    <div class="container border-bottom py-5">
+        <div class="row">
+            <div class="text col-12 col-md-6 col-lg-7">
+                <h2>My past work includes things such as:</h2>
+                <ul>
+                    <li>Creating and mantaining design systems.</li>
+                    <li>Working with new teams to get their templates and CSS off to a new start.</li>
+                    <li>Helping track down accesibility bugs as well as being the team advocate accessibility as we worked on new modules and templates</li>
+                </ul>
+            </div>
+            <div class="image col-12 col-md-6 col-lg-5">
+                <img src="/imges/blogSusanImg2.jpg" class="img-fluid rounded" alt="">
+                <p class="text-center font-italic">FiftyThree type style guide</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience section -->
+
+    <!-- Footer section -->
+
+    <div class="footer footer-expand-lg footer-dark bg-dark text-light">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-4">
+                <h4>Hi</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto incidunt recusandae dolor rem placeat. Quia magnam laudantium iste earum mollitia! Provident consequatur vel est dolorem quae animi accusamus libero fugiat? </p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <h4>FIND ME ON THE WEB</h4>
+                <p style="padding: 15px;">I'm on LinkedIn as www.linkedin.com/in/miguel-angel-aceves-ibarra-a53035186</p>
+                <h4>GET SOME RSS IN YOUR LIFE</h4>
+                <p>
+                    <ul class="d-flex list-unstyled">
+                        <li><a class="px-1 text-light text-decoration-none" href="https://www.susanjeanrobertson.com/feed.xml">Everything</a></li>
+                        |
+                        <li><a class="px-1 text-light text-decoration-none" href="https://www.susanjeanrobertson.com/feed-links.xml">Links</a></li>
+                        |
+                        <li><a class="px-1 text-light text-decoration-none" href="https://susanjeanrobertson.com/feed-reading.xml">Reading</a></li>
+                        |
+                        <li><a class="px-1 text-light text-decoration-none" href="https://susanjeanrobertson.com/feed-journal.xml">My writing</a></li>
+                    </ul>
+                </p>
+                <h4>SUSCRIBE TO MY NEWSLETTER</h4>
+                <p>Let me know your email and you're golden.</p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <p>© Copyright 2020 susan jean robertson </br>
+                    Work page photo credit
+                    <a class="px-1 text-light text-decoration-none" href="https://marcthiele.com/">Marc Thiele</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
