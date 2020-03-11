@@ -18,3 +18,19 @@ var result = MXN * PEN;
 console.log(`The PEN value in MXN is ${result}`)
 console.log(`So you owe ${result * USD} dollars`);
 console.log(`& ${result * EUR} euros.`);
+
+// class solution
+
+var exchangeMxnToPen = 6.10;
+var pen = 2500;
+
+var totalMxn = pen * exchangeMxnToPen;
+
+var exchangeMxnToUsd = 0.046;
+var totalUsd = totalMxn * exchangeMxnToUsd;
+
+var exchangeMxnToEur = 0.041;
+var totalEur = totalMxn * exchangeMxnToEur;
+
+console.log('Tengo ' + totalUsd + ' Dolares ');
+console.log('Tengo ' + totalEur + ' Euros ');
