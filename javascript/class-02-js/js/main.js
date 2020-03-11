@@ -59,6 +59,8 @@ if (pet === "dog" || pet === "parrot") {
     console.log("It's a dog");
 } else if (pet === "parrot") {
     console.log("It's a parrot");
+} else if (pet === "cat") {
+    console.log("It's a cat");
 } else {
-    console.log("It's not a dog or a parrot prro! >:v");
+    console.log("It is an ilegal pet prro! >:v");
 }
