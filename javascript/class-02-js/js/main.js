@@ -64,3 +64,29 @@ if (pet === "dog" || pet === "parrot") {
 } else {
     console.log("It is an ilegal pet prro! >:v");
 }
+
+//Conditional chllng
+//Dada una variable identificar si es par o no
+
+var number = 7;
+
+if (number % 2 === 0) {
+    console.log("The number is even");
+} else {
+    console.log("U're dumb as a peanut dude :/ ");
+}
+
+//class solution
+
+var number = 10;
+
+if (number % 2 === 0) {
+    console.log('Si es par');
+} else {
+    console.log('No es par');
+}
+
+//Methods
+//.length not a method a property
+
+var pet = "parrot";
