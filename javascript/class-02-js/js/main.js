@@ -15,9 +15,7 @@ var USD = 0.046;
 var EUR = 0.041;
 var result = MXN * PEN;
 
-console.log(`The PEN value in MXN is ${result}`)
-console.log(`So you owe ${result * USD} dollars`);
-console.log(`& ${result * EUR} euros.`);
+console.log(`The PEN value in MXN is ${result} so you owe ${result * USD} dollars &  ${result * EUR} euros.`);
 
 // class solution
 
