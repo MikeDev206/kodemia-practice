@@ -32,3 +32,11 @@ var totalEur = totalMxn * exchangeMxnToEur;
 
 console.log('Tengo ' + totalUsd + ' Dolares ');
 console.log('Tengo ' + totalEur + ' Euros ');
+
+//Obtener el área de un círculo
+
+const PI = 3.1416;
+var radius = 4;
+var circleArea = PI * (radius ** 2);
+
+console.log(circleArea);
