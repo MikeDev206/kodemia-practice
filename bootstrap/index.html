@@ -10,41 +10,176 @@
 
 </head>
 
-<body>
+<body class="py-5 px-5">
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand " href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
     <div class="container">
         <div class="row">
-            <div class="col-12 p-3 d-flex justify-content-around justify-content-md-between">
-                <div class="bg-light border border-secondary d-block d-md-none">Square 1</div>
-                <div class="bg-light border border-secondary d-none d-md-block">Square 2</div>
-                <div class="bg-light border border-secondary d-block d-md-none">Square 3</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-sm-2 col-md-3 col-lg-6 col-xl-5">
-                <p class="bg-success">4 columnas</p>
-            </div>
-            <div class="col-12 col-sm-8 col-md-5 col-lg-2 col-xl-1">
-                <p class="bg-primary">4 columnas</p>
-            </div>
-            <div class="col-12 col-sm-2 col-md-4 col-lg-4 col-xl-6">
-                <p class="bg-secondary">4 columnas</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6 col-lg-8">
-                <p class="bg-dark">8 columnas</p>
-            </div>
-            <div class="col-6 col-lg-4">
-                <p class="bg-light">4 columnas</p>
-            </div>
+            <section class="col-12 col-md-9">
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="https://picsum.photos/200" class="card-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="https://picsum.photos/200" class="card-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="https://picsum.photos/200" class="card-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside class="col-12 col-md-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small>3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        <small>Donec id elit non mi porta.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        <small class="text-muted">Donec id elit non mi porta.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        <small class="text-muted">Donec id elit non mi porta.</small>
+                    </a>
+                </div>
+            </aside>
         </div>
         <div class="row">
             <div class="col-12">
-                <p class="bg-warning">12 columnas</p>
+                <div class="row pb-5">
+                    <div class="col-3">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio corporis quaerat impedit tempore sed quo velit ad nostrum quasi optio! Fuga cum vel hic, cupiditate voluptate, tempore recusandae facere explicabo nam sit sint
+                                nostrum nisi. Cum quas libero velit rem numquam illum quaerat praesentium iste culpa maiores modi, reprehenderit id odit voluptas quisquam mollitia sapiente, nobis amet quo consectetur ipsa. Temporibus cum totam consequuntur
+                                ratione aliquam corrupti doloremque. Nihil, sunt ea nulla et quo adipisci in praesentium eius voluptates assumenda quasi distinctio ad reprehenderit velit, cum quisquam labore fuga corporis. Unde pariatur minima dignissimos,
+                                vitae nulla ducimus neque magnam ratione!</div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio corporis quaerat impedit tempore sed quo velit ad nostrum quasi optio! Fuga cum vel hic, cupiditate voluptate, tempore recusandae facere explicabo nam sit sint
+                                nostrum nisi. Cum quas libero velit rem numquam illum quaerat praesentium iste culpa maiores modi, reprehenderit id odit voluptas quisquam mollitia sapiente, nobis amet quo consectetur ipsa. Temporibus cum totam consequuntur
+                                ratione aliquam corrupti doloremque. Nihil, sunt ea nulla et quo adipisci in praesentium eius voluptates assumenda quasi distinctio ad reprehenderit velit, cum quisquam labore fuga corporis. Unde pariatur minima dignissimos,
+                                vitae nulla ducimus neque magnam ratione!</div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio corporis quaerat impedit tempore sed quo velit ad nostrum quasi optio! Fuga cum vel hic, cupiditate voluptate, tempore recusandae facere explicabo nam sit sint
+                                nostrum nisi. Cum quas libero velit rem numquam illum quaerat praesentium iste culpa maiores modi, reprehenderit id odit voluptas quisquam mollitia sapiente, nobis amet quo consectetur ipsa. Temporibus cum totam consequuntur
+                                ratione aliquam corrupti doloremque. Nihil, sunt ea nulla et quo adipisci in praesentium eius voluptates assumenda quasi distinctio ad reprehenderit velit, cum quisquam labore fuga corporis. Unde pariatur minima dignissimos,
+                                vitae nulla ducimus neque magnam ratione!</div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio corporis quaerat impedit tempore sed quo velit ad nostrum quasi optio! Fuga cum vel hic, cupiditate voluptate, tempore recusandae facere explicabo nam sit sint
+                                nostrum nisi. Cum quas libero velit rem numquam illum quaerat praesentium iste culpa maiores modi, reprehenderit id odit voluptas quisquam mollitia sapiente, nobis amet quo consectetur ipsa. Temporibus cum totam consequuntur
+                                ratione aliquam corrupti doloremque. Nihil, sunt ea nulla et quo adipisci in praesentium eius voluptates assumenda quasi distinctio ad reprehenderit velit, cum quisquam labore fuga corporis. Unde pariatur minima dignissimos,
+                                vitae nulla ducimus neque magnam ratione!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 offset-md-4 pb-5">
+                <form class="bg-dark text-white p-3 rounded">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter mail">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Type password">
+                    </div>
+                    <div class="form-group">
+                        <label for=""></label>
+                        <input type="password" class="form-control" placeholder="También aquí prro!">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Click me :3</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
         </div>
     </div>
+
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
