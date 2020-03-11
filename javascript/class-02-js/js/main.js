@@ -10,8 +10,11 @@ console.log(age * days);
 // Tengo 2500 soles, ¿Cuántos dólares y cuantos euros tengo?
 
 var PEN = 2500;
-var USD = 0.28;
-var EUR = 0.25;
+var MXN = 6.10;
+var USD = 0.046;
+var EUR = 0.041;
+var result = MXN * PEN;
 
-console.log(`You owe${USD * PEN}dollars`);
-console.log(`&${EUR * PEN}euros.`);
+console.log(`The PEN value in MXN is ${result}`)
+console.log(`So you owe ${result * USD} dollars`);
+console.log(`& ${result * EUR} euros.`);
